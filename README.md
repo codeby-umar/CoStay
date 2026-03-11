@@ -4,4 +4,4 @@
 
 Platforma talabalar va yangi ko‘chib kelgan foydalanuvchilarga **ishonchli uy topish** hamda **mos xonadosh topish** imkonini beradi.
 
-![Housing Platform Illustration](https://domtut.uz/resources/uploads/post/ipoteka-na-vtorichnoe-zhile-v-uzbekistane.jpg)
+![Housing Platform Illustration](https://www.ipotekakrediti.az/storage/blogs/68553cdbdc26d.jpeg)
