@@ -1,5 +1,23 @@
 {
-  "welcome": "Welcome",
-  "about": "About us",
-  "contact": "Contact"
+  "navbar": {
+    "brand": "CoStay",
+    "forSale": "For Sale",
+    "forRent": "For Rent",
+    "dailyRental": "Daily Rental",
+    "projects": "Projects",
+    "advertise": "Advertise",
+    "login": "Login"
+  },
+  "home": {
+    "title": "Welcome",
+    "description": "Find the best home for yourself"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "We help you find housing"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Get in touch with us"
+  }
 }

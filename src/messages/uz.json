@@ -1,5 +1,23 @@
 {
-  "welcome": "Xush kelibsiz",
-  "about": "Biz haqimizda",
-  "contact": "Bog'lanish"
+  "navbar": {
+    "brand": "CoStay",
+    "forSale": "Sotuv",
+    "forRent": "Ijara",
+    "dailyRental": "Kunlik ijara",
+    "projects": "Loyihalar",
+    "advertise": "Reklama",
+    "login": "Kirish"
+  },
+  "home": {
+    "title": "Xush kelibsiz",
+    "description": "O‘zingiz uchun eng yaxshi uyni toping"
+  },
+  "about": {
+    "title": "Biz haqimizda",
+    "description": "Biz sizga uy topishda yordam beramiz"
+  },
+  "contact": {
+    "title": "Kontaktlar",
+    "description": "Biz bilan bog‘laning"
+  }
 }

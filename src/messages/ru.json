@@ -1,5 +1,23 @@
 {
-  "welcome": "Добро пожаловать",
-  "about": "О нас",
-  "contact": "Контакты"
+  "navbar": {
+    "brand": "CoStay",
+    "forSale": "Продажа",
+    "forRent": "Аренда",
+    "dailyRental": "Посуточно",
+    "projects": "Проекты",
+    "advertise": "Реклама",
+    "login": "Войти"
+  },
+  "home": {
+    "title": "Добро пожаловать",
+    "description": "Найдите лучший дом для себя"
+  },
+  "about": {
+    "title": "О нас",
+    "description": "Мы помогаем найти жилье"
+  },
+  "contact": {
+    "title": "Контакты",
+    "description": "Свяжитесь с нами"
+  }
 }

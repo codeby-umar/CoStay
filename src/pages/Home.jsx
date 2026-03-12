@@ -1,15 +1,12 @@
 import { useTranslation } from "react-i18next";
 
 function Home() {
-  const { t, i18n } = useTranslation();
+  const { t} = useTranslation();
   return (
     <div>
-      <h1>{t("welcome")}</h1>
-      <p>{t("about")}</p>
+      <h1>{t("home.title")}</h1>
+      <p>{t("home.description")}</p>
 
-      <button onClick={() => i18n.changeLanguage("uz")}>UZ</button>
-      <button onClick={() => i18n.changeLanguage("ru")}>RU</button>
-      <button onClick={() => i18n.changeLanguage("en")}>EN</button>
     </div>
   );
 }
