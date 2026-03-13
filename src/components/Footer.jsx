@@ -77,42 +77,42 @@ function Footer() {
         <div className="grid grid-cols-5 items-center text-center py-2">
           <Link
             to="/"
-            className="flex flex-col items-center justify-center gap-1 text-[11px] text-gray-700 hover:text-yellow-500 transition"
+            className="flex flex-col items-center justify-center gap-1 text-sm text-gray-700 hover:text-yellow-500 transition"
           >
-            <AiOutlineHome className="text-xl" />
-            <span>Menyu</span>
+            <AiOutlineHome className="text-2xl" />
+            <span className="text-gray-600">Menyu</span>
           </Link>
 
           <Link
             to="/forsale"
-            className="flex flex-col items-center justify-center gap-1 text-[11px] text-gray-700 hover:text-yellow-500 transition"
+            className="flex flex-col items-center justify-center gap-1 text-sm text-gray-700 hover:text-yellow-500 transition"
           >
-            <MdOutlineMapsHomeWork className="text-xl" />
-            <span>Sotuv</span>
+            <MdOutlineMapsHomeWork className="text-2xl" />
+            <span className="text-gray-600">Sotuv</span>
           </Link>
 
           <Link
             to="/forrent"
-            className="flex flex-col items-center justify-center gap-1 text-[11px] text-gray-700 hover:text-yellow-500 transition"
+            className="flex flex-col items-center justify-center gap-1 text-sm text-gray-700 hover:text-yellow-500 transition"
           >
-            <HiOutlineBuildingOffice2 className="text-xl" />
-            <span>Ijara</span>
+            <HiOutlineBuildingOffice2 className="text-2xl" />
+            <span className="text-gray-600">Ijara</span>
           </Link>
 
           <Link
             to="/advertise"
-            className="flex flex-col items-center justify-center gap-1 text-[11px] text-gray-700 hover:text-yellow-500 transition"
+            className="flex flex-col items-center justify-center gap-1 text-sm text-gray-700 hover:text-yellow-500 transition"
           >
-            <FaTelegramPlane className="text-xl" />
-            <span>E'lon</span>
+            <FaTelegramPlane className="text-2xl" />
+            <span className="text-gray-600">E'lon</span>
           </Link>
 
           <Link
             to="/login"
-            className="flex flex-col items-center justify-center gap-1 text-[11px] text-gray-700 hover:text-yellow-500 transition"
+            className="flex flex-col items-center justify-center gap-1 text-sm text-gray-700 hover:text-yellow-500 transition"
           >
-            <FaRegUser className="text-xl" />
-            <span>Kirish</span>
+            <FaRegUser className="text-2xl" />
+            <span className="text-gray-600">Kirish</span>
           </Link>
         </div>
       </div>
