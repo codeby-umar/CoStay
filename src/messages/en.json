@@ -26,5 +26,11 @@
     "title2": "Support",
     "description": "© 2026 CoStay.uz Galaxy zone team group",
     "save": "All rights reserved"
+  },
+  "login": {
+    "enter": "Login",
+    "phone_label": "Phone number",
+    "agreement_text": "By continuing, you agree to the terms of the Public Offer.",
+    "next_button": "Next"
   }
 }

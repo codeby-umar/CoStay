@@ -26,5 +26,11 @@
     "title2": "Qo'llab-quvvatlash",
     "description": "© 2026 CoStay.uz Galaxy zone team group",
     "save": "Barcha huquqlar himoyalangan"
+  },
+  "login": {
+    "enter": "Kirish",
+    "phone_label": "Telefon raqami",
+    "agreement_text": "Davom etish orqali siz Omaviy oferta shartlariga rozilik bildirasiz.",
+    "next_button": "Keyingi"
   }
 }

@@ -21,10 +21,16 @@
     "description": "Свяжитесь с нами"
   },
   "footer": {
-      "title": "Реклама и сотрудничество",
-      "title1": "Публичная оферта",
-      "title2": "Поддержка",
-      "description": "© 2026 CoStay.uz Galaxy zone team group",
-      "save": "Все права защищены"
-    }
+    "title": "Реклама и сотрудничество",
+    "title1": "Публичная оферта",
+    "title2": "Поддержка",
+    "description": "© 2026 CoStay.uz Galaxy zone team group",
+    "save": "Все права защищены"
+  },
+  "login": {
+    "enter": "Войти",
+    "phone_label": "Номер телефона",
+    "agreement_text": "Продолжая, вы соглашаетесь с условиями Публичной оферты.",
+    "next_button": "Далее"
+  }
 }
