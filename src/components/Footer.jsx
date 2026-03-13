@@ -6,7 +6,7 @@ import {
 import { FaTelegramPlane, FaRegUser } from "react-icons/fa";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { MdOutlineMapsHomeWork } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link , NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 function Footer() {
@@ -73,47 +73,67 @@ function Footer() {
           </div>
         </div>
       </footer>
-      <div className="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 z-50 shadow-[0_-4px_12px_rgba(0,0,0,0.08)]">
-        <div className="grid grid-cols-5 items-center text-center py-2">
-          <Link
+      <div className="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 z-50 ">
+        <div className="grid grid-cols-5 items-center text-center py-3">
+          <NavLink
             to="/"
-            className="flex flex-col items-center justify-center gap-1 text-sm text-gray-700 hover:text-yellow-500 transition"
+            className={({ isActive }) =>
+              `flex flex-col items-center justify-center gap-1 text-sm transition ${
+                isActive ? "text-black" : "text-gray-400"
+              }`
+            }
           >
             <AiOutlineHome className="text-2xl" />
-            <span className="text-gray-600">Menyu</span>
-          </Link>
+            <span>Menyu</span>
+          </NavLink>
 
-          <Link
+          <NavLink
             to="/forsale"
-            className="flex flex-col items-center justify-center gap-1 text-sm text-gray-700 hover:text-yellow-500 transition"
+            className={({ isActive }) =>
+              `flex flex-col items-center justify-center gap-1 text-sm transition ${
+                isActive ? "text-black" : "text-gray-400"
+              }`
+            }
           >
             <MdOutlineMapsHomeWork className="text-2xl" />
-            <span className="text-gray-600">Sotuv</span>
-          </Link>
+            <span>Sotuv</span>
+          </NavLink>
 
-          <Link
+          <NavLink
             to="/forrent"
-            className="flex flex-col items-center justify-center gap-1 text-sm text-gray-700 hover:text-yellow-500 transition"
+            className={({ isActive }) =>
+              `flex flex-col items-center justify-center gap-1 text-sm transition ${
+                isActive ? "text-black" : "text-gray-400"
+              }`
+            }
           >
             <HiOutlineBuildingOffice2 className="text-2xl" />
-            <span className="text-gray-600">Ijara</span>
-          </Link>
+            <span>Ijara</span>
+          </NavLink>
 
-          <Link
+          <NavLink
             to="/advertise"
-            className="flex flex-col items-center justify-center gap-1 text-sm text-gray-700 hover:text-yellow-500 transition"
+            className={({ isActive }) =>
+              `flex flex-col items-center justify-center gap-1 text-sm transition ${
+                isActive ? "text-black" : "text-gray-400"
+              }`
+            }
           >
             <FaTelegramPlane className="text-2xl" />
-            <span className="text-gray-600">E'lon</span>
-          </Link>
+            <span>E'lon</span>
+          </NavLink>
 
-          <Link
+          <NavLink
             to="/login"
-            className="flex flex-col items-center justify-center gap-1 text-sm text-gray-700 hover:text-yellow-500 transition"
+            className={({ isActive }) =>
+              `flex flex-col items-center justify-center gap-1 text-sm transition ${
+                isActive ? "text-black" : "text-gray-400"
+              }`
+            }
           >
             <FaRegUser className="text-2xl" />
-            <span className="text-gray-600">Kirish</span>
-          </Link>
+            <span>Kirish</span>
+          </NavLink>
         </div>
       </div>
     </>
