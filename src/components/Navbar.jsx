@@ -38,7 +38,7 @@ function Navbar() {
           : "relative"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between p-7">
+      <div className="container mx-auto flex items-center justify-between p-7 md:px-0">
         <div className="flex items-center gap-14">
           <Link className="text-3xl font-bold tracking-tighter" to="/">
             CoStay
