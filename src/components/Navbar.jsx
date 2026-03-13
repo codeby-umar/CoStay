@@ -7,15 +7,15 @@ function Navbar() {
   return (
     <header className="flex items-center justify-between p-5">
       <ul className="flex items-center gap-8">
-        <a href="/">CoStay</a>
-        <Link to="/">{t("navbar.forSale")}</Link>
-        <Link to="/">{t("navbar.forRent")}</Link>
-        <Link to="/">{t("navbar.dailyRental")}</Link>
-        <Link to="/">{t("navbar.projects")}</Link>
+        <a className="text-2xl" href="/">CoStay</a>
+        <Link to="/forsale">{t("navbar.forSale")}</Link>
+        <Link to="/forrent">{t("navbar.forRent")}</Link>
+        <Link to="/dailyrental">{t("navbar.dailyRental")}</Link>
+        <Link to="/projects">{t("navbar.projects")}</Link>
       </ul>
 
       <div className="flex items-center gap-4">
-        <button>{t("navbar.advertise")}</button>
+        <Link to={'/advertise'}>{t("navbar.advertise")}</Link>
         <Link to="/login">{t("navbar.login")}</Link>
 
         <select
