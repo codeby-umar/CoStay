@@ -19,5 +19,12 @@
   "contact": {
     "title": "Contact",
     "description": "Get in touch with us"
+  },
+  "footer": {
+    "title": "Advertising and Partnership",
+    "title1": "Public Offer",
+    "title2": "Support",
+    "description": "© 2026 CoStay.uz Galaxy zone team group",
+    "save": "All rights reserved"
   }
 }

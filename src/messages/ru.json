@@ -19,5 +19,12 @@
   "contact": {
     "title": "Контакты",
     "description": "Свяжитесь с нами"
-  }
+  },
+  "footer": {
+      "title": "Реклама и сотрудничество",
+      "title1": "Публичная оферта",
+      "title2": "Поддержка",
+      "description": "© 2026 CoStay.uz Galaxy zone team group",
+      "save": "Все права защищены"
+    }
 }

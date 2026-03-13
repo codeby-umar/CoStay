@@ -19,5 +19,12 @@
   "contact": {
     "title": "Kontaktlar",
     "description": "Biz bilan bog‘laning"
+  },
+  "footer": {
+    "title": "Reklama va hamkorlik",
+    "title1": "Ommaviy offerta",
+    "title2": "Qo'llab-quvvatlash",
+    "description": "© 2026 CoStay.uz Galaxy zone team group",
+    "save": "Barcha huquqlar himoyalangan"
   }
 }
