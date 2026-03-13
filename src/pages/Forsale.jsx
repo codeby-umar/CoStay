@@ -2,7 +2,9 @@ import React from 'react'
 
 function Forsale() {
   return (
-    <div>Forsale</div>
+     <section className='h-screen'>
+         ForSale
+     </section>
   )
 }
 

@@ -2,7 +2,9 @@ import React from 'react'
 
 function Advertise() {
   return (
-    <div>Advertise</div>
+     <section className='h-screen'>
+        Advertise
+     </section>
   )
 }
 

@@ -1,9 +1,63 @@
-import React from 'react'
+import { useState } from "react";
+import uy from "../assets/uy2.jpg";
+import TextField from "@mui/material/TextField";
 
 function Login() {
+  const [phone, setPhone] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
-    <div>Login</div>
-  )
+    <div className="min-h-screen flex items-center justify-center flex-wrap bg-gray-50">
+      <div className="w-full md:w-1/2 h-64 md:h-screen hidden md:block">
+        <img className="h-full w-full object-cover" src={uy} alt="uy" />
+      </div>
+      <div className="w-full md:w-1/2 flex items-center justify-center p-6 py-10">
+        <div className="w-full max-w-md  md:bg-transparent  p-5  md:shadow-none">
+          <h1 className="text-center text-3xl font-bold mb-8 text-gray-800">Kirish</h1>
+
+          <form onSubmit={handleSubmit}>
+            <TextField
+              fullWidth
+              label="Telefon raqam"
+              type="tel"
+              required
+              variant="outlined"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              placeholder="+998"
+              InputProps={{
+                style: { borderRadius: "16px" }
+              }}
+              sx={{
+                mb: 2,
+                "& .MuiOutlinedInput-root": {
+                  backgroundColor: "#fff",
+                  "& fieldset": { borderColor: "#e5e7eb" },
+                  "&:hover fieldset": { borderColor: "#111827" },
+                },
+              }}
+            />
+
+            <p className="text-center text-sm text-gray-500 mt-2 leading-6">
+              Davom etish orqali siz{" "}
+              <span className="underline cursor-pointer text-gray-700">Omaviy Oferta</span>{" "}
+              shartlariga rozilik bildirasiz.
+            </p>
+
+            <button 
+              type="submit" 
+              className="w-full bg-gray-900 hover:bg-black transition text-white py-4 rounded-2xl mt-6 text-base font-semibold shadow-md active:scale-[0.98]"
+            >
+              Keyingi
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Login
+export default Login;

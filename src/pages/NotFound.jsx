@@ -2,7 +2,9 @@ import React from 'react'
 
 function NotFound() {
   return (
-    <div>NotFound</div>
+   <section className='h-screen'>
+      404
+   </section>
   )
 }
 

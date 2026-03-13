@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink, Link } from "react-router-dom";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
@@ -6,6 +6,21 @@ import { HiMenuAlt3, HiX } from "react-icons/hi";
 function Navbar() {
   const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 80) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navLinkClass = ({ isActive }) =>
     `transition-colors hover:text-white ${
@@ -16,8 +31,14 @@ function Navbar() {
     `transition-colors ${isActive ? "text-white" : "text-black"}`;
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-yellow-400 text-[#020202] border-b border-yellow-500 z-50 shadow-sm">
-      <div className="container mx-auto flex items-center justify-between p-4 lg:p-7">
+    <header
+      className={`w-full bg-yellow-400  text-[#020202] border-b border-yellow-500 z-50 transition-all duration-900 ${
+        isSticky
+          ? "fixed top-0 left-0 transition-all duration-900 ease-out"
+          : "relative"
+      }`}
+    >
+      <div className="container mx-auto flex items-center justify-between p-7">
         <div className="flex items-center gap-10">
           <Link className="text-3xl font-bold tracking-tighter" to="/">
             CoStay
@@ -46,12 +67,13 @@ function Navbar() {
           <select
             value={i18n.language}
             onChange={(e) => i18n.changeLanguage(e.target.value)}
-            className="bg-transparent  border-black/20 rounded-lg px-0 py-2 outline-none text-sm font-bold cursor-pointer"
+            className="bg-transparent border-black/20 rounded-lg px-0 py-2 outline-none text-sm font-bold cursor-pointer"
           >
             <option value="uz">UZ</option>
             <option value="ru">RU</option>
             <option value="en">EN</option>
           </select>
+
           <Link className="hover:underline" to="/advertise">
             {t("navbar.advertise")}
           </Link>
@@ -65,7 +87,7 @@ function Navbar() {
         </div>
 
         <button
-          className="lg:hidden text-3xl z-[60]"
+          className="lg:hidden text-3xl z-60"
           onClick={() => setIsOpen(true)}
           aria-label="Open menu"
         >
@@ -74,11 +96,11 @@ function Navbar() {
       </div>
 
       <div
-        className={`fixed inset-0 bg-yellow-400 transition-transform duration-300 ease-in-out lg:hidden z-[70] ${
+        className={`fixed inset-0 bg-yellow-400 transition-transform duration-300 ease-in-out lg:hidden z-70 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-end p-4  border-yellow-500">
+        <div className="flex items-center justify-end p-4 border-yellow-500">
           <button
             className="text-3xl"
             onClick={() => setIsOpen(false)}
@@ -129,7 +151,7 @@ function Navbar() {
 
           <Link
             onClick={() => setIsOpen(false)}
-            className="bg-black text-white px-8 py-3 rounded-full"
+            className="bg-black text-white px-8 py-2 rounded-full"
             to="/login"
           >
             {t("navbar.login")}

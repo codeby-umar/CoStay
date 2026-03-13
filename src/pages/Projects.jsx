@@ -2,7 +2,9 @@ import React from 'react'
 
 function Projects() {
   return (
-    <div>Projects</div>
+     <section className='h-screen'>
+         Projects
+     </section>
   )
 }
 
