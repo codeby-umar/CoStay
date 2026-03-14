@@ -4,9 +4,7 @@ function Home() {
   const { t} = useTranslation();
   return (
     <div className="h-screen container">
-      <div>
-          Home
-      </div>
+        
     </div>
   );
 }
