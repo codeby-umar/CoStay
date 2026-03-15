@@ -2,7 +2,7 @@ import React from 'react'
 
 function ForRent() {
   return (
-     <section className='h-screen'>
+     <section>
          ForRent
      </section>
   )

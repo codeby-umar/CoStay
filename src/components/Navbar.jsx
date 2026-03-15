@@ -32,7 +32,7 @@ function Navbar() {
 
   return (
     <header
-      className={`w-full bg-yellow-400  text-[#020202] border-b border-yellow-500 z-50 transition-all duration-900 ${
+      className={`w-full bg-yellow-400  text-[#020202]  z-50 transition-all duration-900 ${
         isSticky
           ? "fixed top-0 left-0 transition-all duration-900 ease-out"
           : "relative"
@@ -59,6 +59,9 @@ function Navbar() {
 
             <NavLink to="/projects" className={navLinkClass}>
               {t("navbar.projects")}
+            </NavLink>
+            <NavLink to="/ui" className={navLinkClass}>
+              {t("navbar.ui")}
             </NavLink>
           </div>
         </div>

@@ -8,6 +8,7 @@ import ForRent from "./pages/ForRent";
 import Projects from "./pages/Projects";
 import Notfound from "./pages/NotFound";
 import Advertise from "./pages/Advertise";
+import UiTafsiya from "./pages/Uitafsiya";
 import Dailyrenetr from "./pages/Dailyrental";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
               <Route path="/dailyrental" element={<Layout><Dailyrenetr/></Layout>}/>
               <Route path="/projects" element={<Layout><Projects/></Layout>}/>
                <Route path="/advertise" element={<Layout><Advertise/></Layout>}/>
+               <Route path="/ui" element={<Layout><UiTafsiya/></Layout>}/>
               <Route path="/register" element={<SignUp/>}/>
               <Route path="/login" element={<Login/>}/>
               <Route path="*" element={<Notfound/>}/>

@@ -6,7 +6,8 @@
     "dailyRental": "Kunlik ijara",
     "projects": "Loyihalar",
     "advertise": "Reklama",
-    "login": "Kirish"
+    "login": "Kirish",
+    "ui" : "Ai Tavsiya"
   },
   "home": {
     "title": "Xush kelibsiz",

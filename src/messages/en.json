@@ -6,7 +6,8 @@
     "dailyRental": "Daily Rental",
     "projects": "Projects",
     "advertise": "Advertise",
-    "login": "Login"
+    "login": "Login",
+    "ui" : "Recommendation "
   },
   "home": {
     "title": "Welcome",
