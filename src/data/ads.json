@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "isVip": true,
+    "price": "5.5M $",
+    "title": "Hotel & Shops",
+    "loc": "Mirobod",
+    "img": "https://images.unsplash.com/photo-1541339907198-e08759df9a73?q=80&w=400",
+    "size": "1200m²"
+  },
+  {
+    "id": 2,
+    "isVip": true,
+    "price": "75k $",
+    "title": "Luxury Flat",
+    "loc": "Chilonzor",
+    "img": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=400",
+    "size": "56m²"
+  },
+  {
+    "id": 3,
+    "isVip": false,
+    "price": "230k $",
+    "title": "Elite House",
+    "loc": "Yunusobod",
+    "img": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=400",
+    "size": "600m²"
+  },
+  {
+    "id": 4,
+    "isVip": false,
+    "price": "84k $",
+    "title": "Modern Apt",
+    "loc": "Tashkent City",
+    "img": "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?q=80&w=400",
+    "size": "82m²"
+  }
+]
